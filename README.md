@@ -1,7 +1,17 @@
 # projet10
 
+1. Create a Gitlab project to store the code.
 
-```
-projet 10	Git ---> Gitlab ---> sv1:Jenkins (avec Jenkinsfile) ---> sv2:Kubernetes (service NodePort) : projet Spring + monitoring avec Prometheus/grafana sans Helm (gestionnaire de packages pour Kubernetes) avec template YAML file (service NodePort)
+2. Create a Jenkins CI/CD pipeline for the Spring Boot application.
 
-```
+3. Configure the Jenkins pipeline to build the application, run tests, and push the application artifacts to a repository.
+
+4. Create a Kubernetes manifest file that will define the deployment, service, and other resources.
+
+5. Configure Jenkins to deploy the application to the Kubernetes cluster.
+
+6. Monitor the application using Prometheus and Grafana without using Helm.
+
+7. Configure the Kubernetes service to use NodePort for external access.
+
+8. Test the application after deployment.

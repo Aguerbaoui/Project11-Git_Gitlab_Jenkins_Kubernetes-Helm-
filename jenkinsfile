@@ -1,0 +1,34 @@
+pipeline {
+        agent any
+      /*  environement{
+
+            DOCKERHUB_CREDENTIALS=credentials('dockerhub')
+        }*/
+
+    stages {
+    
+        stage('git clone') {
+                steps {
+                     git branch: 'main', credentialsId: 'jenkins', url: 'git@gitlab.com:Aguerbaoui/projet-10.git'
+            
+            
+                }
+        
+        }
+
+        stage('Build') {
+                steps {
+                     withMaven(maven: 'Maven') {
+                   // sh script: 'mvn clean install package'}
+                      sh script: 'mvn spring-boot:run'
+        
+                }
+        }
+     }
+
+  
+     
+
+    } 
+
+} 
