@@ -20,11 +20,33 @@ pipeline {
                 steps {
                      withMaven(maven: 'Maven') {
                    // sh script: 'mvn clean install package'}
-                      sh script: 'mvn spring-boot:run'
+                     // sh script: 'mvn spring-boot:run'
+                     sh script: 'mvn clean package -Dmaven.test.skip=true'
         
                 }
         }
      }
+
+          stage('Docker Build and Tag') {
+           steps {
+            sh 'docker build -t nadiaaguerbaoui1/tomcat-image:latest .'
+           
+               }
+            }
+
+
+
+           stage('Publish image to Docker Hub') {
+          
+            steps {
+                withDockerRegistry([ credentialsId: "dockerHub", url: "" ]) {
+                   
+                   sh 'docker push nadiaaguerbaoui1/tomcat-image:latest'
+                   }
+      
+                  
+          }
+        }
 
   
      
