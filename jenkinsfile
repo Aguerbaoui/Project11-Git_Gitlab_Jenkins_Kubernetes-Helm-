@@ -29,7 +29,7 @@ pipeline {
 
           stage('Docker Build and Tag') {
            steps {
-            sh 'docker build -t nadiaaguerbaoui1/tomcat-image:latest .'
+            sh 'docker build -t nadiaaguerbaoui1/tomcat-spring-image:latest .'
            
                }
             }
@@ -41,7 +41,7 @@ pipeline {
             steps {
                 withDockerRegistry([ credentialsId: "dockerHub", url: "" ]) {
                    
-                   sh 'docker push nadiaaguerbaoui1/tomcat-image:latest'
+                   sh 'docker push nadiaaguerbaoui1/tomcat-spring-image:latest'
                    }
       
                   
