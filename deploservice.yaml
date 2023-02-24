@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: tomcat-spring-deployment
-  namespace: tomcat-spring-namespace
+  #namespace: tomcat-spring-namespace
 spec:
   selector:
     matchLabels:
@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: tomcat-spring-service
+  #name: tomcat-spring-service
   namespace: tomcat-spring-namespace
 spec:
   type: NodePort
