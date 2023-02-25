@@ -15,3 +15,10 @@
 7. Configure the Kubernetes service to use NodePort for external access.
 
 8. Test the application after deployment.
+
+## Step1:
+Build the application using this command:
+==> mvn clean package -Dmaven.test.skip=true
+
+kubectl config set-context --current --namespace=<namespace-name>
+===> to enter in a specific namespace
