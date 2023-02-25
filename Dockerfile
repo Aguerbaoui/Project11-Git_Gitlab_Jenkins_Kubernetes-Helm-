@@ -15,4 +15,4 @@ COPY ./target/angular-spring-3.0.0.jar /app/
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "angular-spring-3.0.0.jar.jar"]
+CMD ["java", "-jar", "angular-spring-3.0.0.jar"]
