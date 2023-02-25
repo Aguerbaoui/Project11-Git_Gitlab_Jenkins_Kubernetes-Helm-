@@ -32,4 +32,4 @@ spec:
     - port: 80
       protocol: TCP
       targetPort: 8081
-      nodePort: 32222
+      nodePort: 31456
