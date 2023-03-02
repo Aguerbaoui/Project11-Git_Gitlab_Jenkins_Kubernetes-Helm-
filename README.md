@@ -39,3 +39,7 @@ how can we build a spring boot applicatioin using jenkins and Maven ?
 
 kubectl config set-context --current --namespace=<namespace-name>
 ===> to enter in a specific namespace
+DNS cash
+jenkins token:
+dckr_pat_iS8sl9kXPpzcSoVWI1j5sqTKJY4
+Il fault toujours copier le kubecnfig to the jen,kins server 
