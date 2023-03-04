@@ -43,3 +43,5 @@ DNS cash
 jenkins token:
 dckr_pat_iS8sl9kXPpzcSoVWI1j5sqTKJY4
 Il fault toujours copier le kubecnfig to the jen,kins server 
+# Pour complter le projet , on doit suivre le lien suivant trés utile:
+https://devopscube.com/setup-prometheus-monitoring-on-kubernetes/
