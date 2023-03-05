@@ -22,7 +22,7 @@ spec:
       - name: tomcat
         image: nadiaaguerbaoui1/tomcat-spring-image:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 8080
 ---        
 apiVersion: v1
 kind: Service
@@ -36,5 +36,5 @@ spec:
   ports:
     - port: 80
       protocol: TCP
-      targetPort: 8081
+      targetPort: 8080
       nodePort: 31456
